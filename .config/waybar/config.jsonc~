@@ -22,18 +22,17 @@
         "custom/gpu",
         "custom/gpu-temp",
         "pulseaudio",
-        "keyboard-state",
         "clock",
         "custom/power"
     ],
     // Modules configuration
-    // "hyprland/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
+    "hyprland/workspaces": {
+    //    "disable-scroll": true,
+        "all-outputs": true,
+    //    "warp-on-scroll": false,
+    //    "format": "{name}: {icon}",
+    //    "format-icons": {
+    //        "1": "",
     //         "2": "",
     //         "3": "",
     //         "4": "",
@@ -41,8 +40,8 @@
     //         "urgent": "",
     //         "focused": "",
     //         "default": ""
-    //     }
-    // },
+    //    }
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
