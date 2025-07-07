@@ -1,0 +1,246 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "Fira Code";
+    /*font-family: "D2CodingLigature Nerd Mono";*/
+    font-size: 14px;
+    min-height: 0;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    color: #ebdbb2;
+    background-color: #1D2021;
+    border-radius: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+    min-height: 44px;
+}
+
+window#waybar {
+    background: transparent;
+    /*    background-color: rgba(43, 48, 59, 0.5); */
+    /*    border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#waybar.empty #window {
+    background-color: transparent;
+}
+
+#workspaces {
+
+}
+
+#window {
+    margin: 2;
+    padding-left: 8;
+    padding-right: 8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+menu {
+    background: #3c3836;
+    color: #ebdbb2;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+menuitem {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+
+menuitem:hover {
+    background-color: #cc241d;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button {
+    background-color: #504945;
+    border-radius: 17px;
+    padding-left: 11px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+#workspaces button:hover {
+    background-color: #928374;
+}
+
+#workspaces button.focused {
+    background-color: #689d6a;
+}
+
+#workspaces button.active {
+    background-color: #689d6a;
+}
+
+#workspaces button.urgent {
+    background-color: #d65d0e;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#custom-gpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+    margin: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#cpu, #custom-cpu-temp, #custom-gpu-usage, #custom-gpu-temp {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#cpu, #temperature {
+    color: #CC241D;
+}
+
+#custom-gpu, #custom-gpu-temp {
+    color: #98971A;
+}
+
+#pulseaudio {
+    color: #D79921;
+}
+
+#clock {
+    color: #458588;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#battery icon {
+    color: red;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #ffffff;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#tray {
+    padding-right: 10px;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+/*
+
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+ */
