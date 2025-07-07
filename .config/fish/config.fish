@@ -1,7 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
     fastfetch
-    cat ~/.cache/wal/sequences
     abbr -a vimf "vim ~/.config/fish/config.fish"
     abbr -a vimh "vim ~/.config/hypr/hyprland.conf"
     abbr -a vimwc "vim ~/.config/waybar/config.jsonc"
@@ -10,3 +9,4 @@ if status is-interactive
 end
 
 source /etc/environment
+cat ~/.cache/wal/sequences
