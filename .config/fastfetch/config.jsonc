@@ -1,0 +1,107 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "padding": {
+      "left": 5,
+      "right": 5
+    },
+    "source": "~/.config/fastfetch/archey"
+  },
+  "display": {
+      "separator": " ",
+      "constants": [
+        "╭──────────────────────────────────────────────────╮",
+        "╞════════╤═════════════════════════════════════════╡",
+        "╰────────┴─────────────────────────────────────────╯",
+        "│\u001b[50C│\u001b[50D"
+      ]
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": ""
+    },
+    {
+        "type": "custom",
+        "format": "{#keys}{$1}"
+    },
+    {
+      "type": "title",
+      "key": "{$4}",
+      "format": "{user-name-colored}{at-symbol-colored}{host-name-colored}"
+    },
+    {
+      "type": "custom",
+      "format": "{#keys}{$2}"
+    },
+    {
+      "type": "os",
+      "key": "{$4}{#31}OS     {#keys}│",
+      "format": "{pretty-name} {arch}"
+    },
+    {
+      "type": "host",
+      "key": "{$4}{#32}HOST   {#keys}│",
+      "format": "{name}"
+    },
+    {
+      "type": "kernel",
+      "key": "{$4}{#33}KERNEL {#keys}│",
+      "format": "{sysname} {release}"
+    },
+    {
+      "type": "wm",
+      "key": "{$4}{#34}WM     {#keys}│",
+      "format": "{pretty-name} ({protocol-name})"
+    },
+    {
+      "type": "terminal",
+      "key": "{$4}{#35}TERM   {#keys}│",
+      "format": ""
+    },
+    {
+      "type": "cpu",
+      "key": "{$4}{#36}CPU    {#keys}│",
+      "format": "{name}"
+      //"format": "{name}\u001b[8D\u001b[KGFX   {#keys}│"
+    },
+    {
+      "type": "gpu",
+      "hideType": "integrated",
+      "key": "{$4}{#31}GPU    {#keys}│",
+      "format": "{name}"
+    },
+    {
+      "type": "memory",
+      "key": "{$4}{#32}MEMORY {#keys}│",
+      "format": ""
+    },
+    {
+      "type": "shell",
+      "key": "{$4}{#33}SHELL  {#keys}│",
+      "format": ""
+    },
+    {
+      "type": "packages",
+      "key": "{$4}{#34}PKGS   {#keys}│",
+      "format": ""
+    },
+    {
+      "type": "uptime",
+      "key": "{$4}{#35}UPTIME {#keys}│",
+      "format": ""
+    },
+    {
+      "type": "colors",
+      "key": "{$4}{#36}COLORS {#keys}│",
+      "symbol": "block",
+      "block": {
+        "range": [8, 15]
+      }
+    },
+    {
+      "type": "custom",
+      "format": "{#keys}{$3}"
+    }
+  ]
+}
