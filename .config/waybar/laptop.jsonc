@@ -17,10 +17,9 @@
     //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
     "modules-right": [
         "tray",
-        "cpu",
-        "temperature",
-        "custom/gpu",
-        "custom/gpu-temp",
+        "backlight",
+        "battery",
+        "battery#bat2",
         "pulseaudio",
         "clock",
         "custom/power"
@@ -136,15 +135,11 @@
         // "device": "acpi_video1",
         "format": "{icon} {percent}%",
         "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "🌕",
+            "🌔",
+            "🌓",
+            "🌒",
+            "🌑"
         ]
     },
     "battery": {

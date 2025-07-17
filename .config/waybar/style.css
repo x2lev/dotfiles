@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "Fira Code";
+    font-family: "Fira Code, Noto Serif";
     /*font-family: "D2CodingLigature Nerd Mono";*/
     font-size: 14px;
     min-height: 0;
@@ -131,11 +131,11 @@ button {
 }
 
 
-#cpu, #temperature {
+#backlight, #cpu, #temperature {
     color: #CC241D;
 }
 
-#custom-gpu, #custom-gpu-temp {
+#battery, #custom-gpu, #custom-gpu-temp {
     color: #98971A;
 }
 
@@ -168,8 +168,13 @@ button {
 
 #battery.charging,
 #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: #1d2021;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 9px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background-color: #98971A;
 }
 
 @keyframes blink {
@@ -180,8 +185,14 @@ button {
 }
 
 #battery.warning:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
+    color: #1d2021;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 9px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background-color: #fb4934;
+
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -190,8 +201,14 @@ button {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
+    color: #1d2021;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 9px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background-color: #fb4934;
+
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
