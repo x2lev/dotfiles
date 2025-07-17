@@ -19,7 +19,6 @@
         "tray",
         "backlight",
         "battery",
-        "battery#bat2",
         "pulseaudio",
         "clock",
         "custom/power"
@@ -149,6 +148,7 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
+        "format-time": "{H}:{m}",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",

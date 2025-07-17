@@ -17,10 +17,7 @@
     //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
     "modules-right": [
         "tray",
-        "cpu",
-        "temperature",
-        "custom/gpu",
-        "custom/gpu-temp",
+        "backlight",
         "battery",
         "pulseaudio",
         "clock",
@@ -137,15 +134,11 @@
         // "device": "acpi_video1",
         "format": "{icon} {percent}%",
         "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "🌕",
+            "🌔",
+            "🌓",
+            "🌒",
+            "🌑"
         ]
     },
     "battery": {
@@ -155,7 +148,8 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
+        "format-time": "{H}:{m}",
+        format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
         // "format-good": "", // An empty format will hide the module
