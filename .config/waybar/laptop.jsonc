@@ -21,7 +21,6 @@
         "temperature",
         "custom/gpu",
         "custom/gpu-temp",
-        "battery",
         "pulseaudio",
         "clock",
         "custom/power"
