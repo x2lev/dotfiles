@@ -1,25 +1,477 @@
 <!DOCTYPE patchbay>
-<patchbay name="qpw" version="0.9.4">
+<patchbay name="qpw" version="0.9.6">
  <items>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FR"/>
-   <input node="OBS" port="OBS:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="loopback-1536-12" port="loopback-1536-12:output_FL"/>
+   <output node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FL"/>
    <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Titanfall 2" port="Titanfall 2:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+   <output node="Firefox-2" port="Firefox:output_FR"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FL"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rivals2" port="Rivals2:output_FL"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="firefox" port="firefox:output_FR"/>
-   <input node="discord" port="discord:input_FR"/>
+   <input node="OBS-2" port="OBS:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Marvel Rivals-1" port="Marvel Rivals:output_FL"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rivals2" port="Rivals2:output_FR"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microphone" port="microphone:capture_FR"/>
+   <input node="Apex Legends" port="Apex Legends:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Marvel Rivals" port="Marvel Rivals:output_FL"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
+   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Marvel Rivals" port="Marvel Rivals:output_FR"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FR"/>
+   <input node="Rembrandt Radeon High Definition Audio Controller Digital Stereo (HDMI 3)" port="Q27G2G4:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:monitor_FL"/>
+   <input node="microphone" port="microphone:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TEKKENE" port="TEKKENE:output_FL"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="node-7" port=":input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
+   <input node="ARC Raiders" port="ARC Raiders:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="games Audio/Sink sink" port="games Audio/Sink sink:monitor_FR"/>
+   <input node="OBS-3" port="OBS:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="PulseAudio Volume Control-2" port="PulseAudio Volume Control:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-2" port="Firefox:output_FR"/>
+   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="firefox" port="firefox:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="firefox sink" port="firefox sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FL"/>
+   <input node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FR"/>
+   <input node="loopback-1536-12" port="loopback-1536-12:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Digital Stereo (IEC958)" port="ALCS1200A Digital:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Marvel Rivals-1" port="Marvel Rivals:output_FR"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Digital Stereo (IEC958)" port="ALCS1200A Digital:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TEKKENE" port="TEKKENE:output_FR"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FL"/>
+   <input node="Rembrandt Radeon High Definition Audio Controller Digital Stereo (HDMI 3)" port="Q27G2G4:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Apex Legends-1" port="Apex Legends:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
+   <input node="microphone" port="microphone:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-3" port="Firefox:output_FL"/>
+   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:monitor_FR"/>
+   <input node="microphone" port="microphone:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="loopback-1536-12" port="loopback-1536-12:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FR"/>
+   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Titanfall 2-1" port="Titanfall 2:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
+   <input node="discord sink" port="discord sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FR"/>
+   <input node="OBS-3" port="OBS:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="games Audio/Sink sink" port="games Audio/Sink sink:monitor_FL"/>
+   <input node="OBS-3" port="OBS:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Apex Legends-1" port="Apex Legends:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FR"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FR"/>
+   <input node="Navi 31 HDMI/DP Audio Digital Stereo (HDMI)" port="LC32G7xT:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FL"/>
+   <input node="OBS-3" port="OBS:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FL"/>
+   <input node="Navi 31 HDMI/DP Audio Digital Stereo (HDMI)" port="LC32G7xT:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
+   <input node="microphone" port="microphone:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="CX31993+MAX97220 HiFiAudio Analog Stereo [Monitor]" port="CX31993+MAX97220 HiFiAudio:monitor_FR"/>
+   <input node="PulseAudio Volume Control-2" port="PulseAudio Volume Control:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FL"/>
+   <input node="ARC Raiders-1" port="ARC Raiders:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TEKKENE-2" port="TEKKENE:output_FL"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FL"/>
+   <input node="microphone" port="microphone:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
+   <input node="ARC Raiders-1" port="ARC Raiders:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Titanfall 2-1" port="Titanfall 2:output_FL"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="CX31993+MAX97220 HiFiAudio Analog Stereo [Monitor]" port="CX31993+MAX97220 HiFiAudio:monitor_FL"/>
+   <input node="PulseAudio Volume Control-2" port="PulseAudio Volume Control:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microphone" port="microphone:capture_FL"/>
+   <input node="THE FINALS" port="THE FINALS:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
+   <input node="microphone sink" port="microphone sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:monitor_FL"/>
+   <input node="microphone" port="microphone:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microphone" port="microphone:capture_FR"/>
+   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-1" port="Chromium:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TEKKENE-2" port="TEKKENE:output_FR"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="ELDEN RING™" port="ELDEN RING™:output_FL"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FR"/>
+   <input node="ARC Raiders" port="ARC Raiders:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-3" port="Firefox:output_FR"/>
+   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
+   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="firefox" port="firefox:output_FL"/>
+   <input node="OBS-2" port="OBS:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Titanfall 2" port="Titanfall 2:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
+   <input node="microphone sink" port="microphone sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Apex Legends" port="Apex Legends:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FL"/>
+   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FL"/>
+   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="node-6" port=":input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FR"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="firefox sink" port="firefox sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-2" port="Firefox:output_FL"/>
+   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Apex Legends" port="Apex Legends:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-1" port="Chromium:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FR"/>
+   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="firefox" port="firefox:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="firefox Audio/Sink sink" port="firefox Audio/Sink sink:monitor_FR"/>
+   <input node="OBS-2" port="OBS:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TEKKENE" port="TEKKENE:output_FR"/>
+   <input node="OBS Studio: JACK Input Client" port="OBS Studio: JACK Input Client:in_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TEKKENE-1" port="TEKKENE:output_FL"/>
+   <input node="OBS Studio: JACK Input Client" port="OBS Studio: JACK Input Client:in_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FL"/>
+   <input node="OBS" port="OBS:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
+   <input node="ARC Raiders" port="ARC Raiders:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:monitor_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FL"/>
    <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Marvel Rivals" port="Marvel Rivals:output_FL"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="firefox Audio/Sink sink" port="firefox Audio/Sink sink:monitor_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FL"/>
+   <input node="loopback-1536-12" port="loopback-1536-12:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Apex Legends" port="Apex Legends:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TEKKENE" port="TEKKENE:output_FL"/>
+   <input node="OBS Studio: JACK Input Client" port="OBS Studio: JACK Input Client:in_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
+   <input node="discord sink" port="discord sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FR"/>
+   <input node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rivals2-1" port="Rivals2:output_FR"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
+   <input node="ARC Raiders-1" port="ARC Raiders:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FR"/>
+   <input node="games Audio/Sink sink" port="games Audio/Sink sink:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
+   <input node="OBS-1" port="OBS:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FL"/>
+   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="node-6" port=":input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Titanfall 2-1" port="Titanfall 2:output_FR"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FR"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:output_FR"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FL"/>
+   <input node="games Audio/Sink sink" port="games Audio/Sink sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="ELDEN RING™" port="ELDEN RING™:output_FR"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FL"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="CX31993+MAX97220 HiFiAudio Analog Stereo [Monitor]" port="CX31993+MAX97220 HiFiAudio:monitor_FR"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Titanfall 2-1" port="Titanfall 2:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microphone" port="microphone:capture_FL"/>
+   <input node="Apex Legends" port="Apex Legends:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microphone" port="microphone:capture_FL"/>
+   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Marvel Rivals" port="Marvel Rivals:output_FR"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="node-7" port=":input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rivals2-1" port="Rivals2:output_FL"/>
+   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
+   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Firefox-3" port="Firefox:output_FL"/>
@@ -46,84 +498,52 @@
    <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FR"/>
+   <input node="OBS" port="OBS:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="loopback-1536-12" port="loopback-1536-12:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Titanfall 2" port="Titanfall 2:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="firefox" port="firefox:output_FR"/>
+   <input node="discord" port="discord:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FR"/>
    <input node="microphone" port="microphone:input_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
-   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="microphone" port="microphone:capture_FL"/>
-   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Marvel Rivals" port="Marvel Rivals:output_FR"/>
-   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FR"/>
-   <input node="node-7" port=":input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Rivals2-1" port="Rivals2:output_FL"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="microphone" port="microphone:capture_FL"/>
-   <input node="Apex Legends" port="Apex Legends:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Titanfall 2-1" port="Titanfall 2:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FL"/>
-   <input node="games Audio/Sink sink" port="games Audio/Sink sink:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ELDEN RING™" port="ELDEN RING™:output_FR"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-1" port="Firefox:output_FL"/>
+   <output node="CX31993+MAX97220 HiFiAudio Analog Stereo [Monitor]" port="CX31993+MAX97220 HiFiAudio:monitor_FL"/>
    <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="CX31993+MAX97220 HiFiAudio Analog Stereo [Monitor]" port="CX31993+MAX97220 HiFiAudio:monitor_FR"/>
-   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+   <output node="TEKKENE-2" port="TEKKENE:output_FR"/>
+   <input node="OBS Studio: JACK Input Client" port="OBS Studio: JACK Input Client:in_2"/>
   </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Titanfall 2-1" port="Titanfall 2:output_FR"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-1" port="Firefox:output_FR"/>
-   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FL"/>
-   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+  <item node-type="pipewire" port-type="pipewire-video">
+   <output node="kwin_wayland" port="kwin_wayland:output_1"/>
+   <input node="plasmashell" port="plasmashell:input_1"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:monitor_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+   <input node="microphone" port="microphone:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TEKKENE-1" port="TEKKENE:output_FR"/>
+   <input node="OBS Studio: JACK Input Client" port="OBS Studio: JACK Input Client:in_2"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="firefox Audio/Sink sink" port="firefox Audio/Sink sink:monitor_FL"/>
-   <input node="OBS-2" port="OBS:input_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-2" port="Firefox:output_FL"/>
-   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Firefox-1" port="Firefox:output_FR"/>
@@ -134,380 +554,24 @@
    <input node="discord" port="discord:input_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="firefox Audio/Sink sink" port="firefox Audio/Sink sink:monitor_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
+   <output node="Firefox-2" port="Firefox:output_FL"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:monitor_FR"/>
-   <input node="microphone" port="microphone:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-video">
-   <output node="kwin_wayland" port="kwin_wayland:output_1"/>
-   <input node="plasmashell" port="plasmashell:input_1"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="firefox" port="firefox:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="firefox Audio/Sink sink" port="firefox Audio/Sink sink:monitor_FR"/>
-   <input node="OBS-2" port="OBS:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Apex Legends" port="Apex Legends:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-1" port="Chromium:output_FR"/>
    <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FR"/>
-   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FR"/>
-   <input node="node-6" port=":input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FR"/>
-   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FL"/>
-   <input node="firefox sink" port="firefox sink:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-2" port="Firefox:output_FL"/>
-   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
-   <input node="microphone sink" port="microphone sink:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Apex Legends" port="Apex Legends:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-1" port="Firefox:output_FL"/>
-   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FL"/>
-   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-3" port="Firefox:output_FR"/>
-   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
-   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="firefox" port="firefox:output_FL"/>
+   <output node="firefox Audio/Sink sink" port="firefox Audio/Sink sink:monitor_FL"/>
    <input node="OBS-2" port="OBS:input_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Titanfall 2" port="Titanfall 2:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
+   <output node="TEKKENE-2" port="TEKKENE:output_FL"/>
+   <input node="OBS Studio: JACK Input Client" port="OBS Studio: JACK Input Client:in_1"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Firefox" port="Firefox:output_FL"/>
-   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FL"/>
-   <input node="node-6" port=":input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FR"/>
-   <input node="games Audio/Sink sink" port="games Audio/Sink sink:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
-   <input node="OBS-1" port="OBS:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-1" port="Firefox:output_FL"/>
-   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Apex Legends" port="Apex Legends:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
-   <input node="discord sink" port="discord sink:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FL"/>
-   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Rivals2-1" port="Rivals2:output_FR"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FL"/>
-   <input node="loopback-1536-12" port="loopback-1536-12:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FL"/>
    <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Marvel Rivals" port="Marvel Rivals:output_FL"/>
-   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="firefox Audio/Sink sink" port="firefox Audio/Sink sink:monitor_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:monitor_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FL"/>
-   <input node="OBS" port="OBS:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FR"/>
-   <input node="Navi 31 HDMI/DP Audio Digital Stereo (HDMI)" port="LC32G7xT:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FL"/>
-   <input node="OBS-3" port="OBS:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Apex Legends-1" port="Apex Legends:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-1" port="Firefox:output_FR"/>
-   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FR"/>
-   <input node="OBS-3" port="OBS:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="BloonsTD6.exe" port="BloonsTD6.exe:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="games Audio/Sink sink" port="games Audio/Sink sink:monitor_FL"/>
-   <input node="OBS-3" port="OBS:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
-   <input node="discord sink" port="discord sink:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Titanfall 2-1" port="Titanfall 2:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="loopback-1536-12" port="loopback-1536-12:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-1" port="Firefox:output_FR"/>
-   <input node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
-   <input node="microphone" port="microphone:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-3" port="Firefox:output_FL"/>
-   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:monitor_FR"/>
-   <input node="microphone" port="microphone:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FL"/>
-   <input node="Rembrandt Radeon High Definition Audio Controller Digital Stereo (HDMI 3)" port="Q27G2G4:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Apex Legends-1" port="Apex Legends:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="ELDEN RING™" port="ELDEN RING™:output_FL"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium-1" port="Chromium:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
-   <input node="microphone sink" port="microphone sink:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:monitor_FL"/>
-   <input node="microphone" port="microphone:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="microphone" port="microphone:capture_FR"/>
-   <input node="WEBRTC VoiceEngine" port="WEBRTC VoiceEngine:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FL"/>
-   <input node="microphone" port="microphone:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Titanfall 2-1" port="Titanfall 2:output_FL"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="CX31993+MAX97220 HiFiAudio Analog Stereo [Monitor]" port="CX31993+MAX97220 HiFiAudio:monitor_FL"/>
-   <input node="PulseAudio Volume Control-2" port="PulseAudio Volume Control:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="microphone" port="microphone:capture_FL"/>
-   <input node="THE FINALS" port="THE FINALS:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FL"/>
-   <input node="Navi 31 HDMI/DP Audio Digital Stereo (HDMI)" port="LC32G7xT:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FL"/>
-   <input node="microphone" port="microphone:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="CX31993+MAX97220 HiFiAudio Analog Stereo [Monitor]" port="CX31993+MAX97220 HiFiAudio:monitor_FR"/>
-   <input node="PulseAudio Volume Control-2" port="PulseAudio Volume Control:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FR"/>
-   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Marvel Rivals" port="Marvel Rivals:output_FL"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Yeti Nano Analog Stereo" port="Yeti Nano:capture_FR"/>
-   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Marvel Rivals" port="Marvel Rivals:output_FR"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h HD Audio Controller Analog Stereo [Monitor]" port="ALCS1200A Analog:monitor_FR"/>
-   <input node="Rembrandt Radeon High Definition Audio Controller Digital Stereo (HDMI 3)" port="Q27G2G4:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="microphone_passthrough Audio/Sink sink" port="microphone_passthrough Audio/Sink sink:monitor_FL"/>
-   <input node="microphone" port="microphone:input_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Rivals2" port="Rivals2:output_FR"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="microphone" port="microphone:capture_FR"/>
-   <input node="Apex Legends" port="Apex Legends:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Marvel Rivals-1" port="Marvel Rivals:output_FL"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-2" port="Firefox:output_FR"/>
-   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-1" port="Firefox:output_FL"/>
-   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Rivals2" port="Rivals2:output_FL"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_1"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="firefox" port="firefox:output_FR"/>
-   <input node="OBS-2" port="OBS:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:capture_FR"/>
-   <input node="loopback-1536-12" port="loopback-1536-12:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FL"/>
-   <input node="Family 17h/19h HD Audio Controller Digital Stereo (IEC958)" port="ALCS1200A Digital:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Marvel Rivals-1" port="Marvel Rivals:output_FR"/>
-   <input node="OBS Studio: Window Audio" port="OBS Studio: Window Audio:in_2"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Digital Stereo (IEC958)" port="ALCS1200A Digital:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FR"/>
-   <input node="firefox sink" port="firefox sink:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Chromium" port="Chromium:output_FL"/>
-   <input node="chromium Audio/Sink sink" port="chromium Audio/Sink sink:playback_FL"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FR"/>
-   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="firefox" port="firefox:output_FR"/>
-   <input node="Family 17h/19h HD Audio Controller Analog Stereo" port="ALCS1200A Analog:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FL"/>
-   <input node="PulseAudio Volume Control-2" port="PulseAudio Volume Control:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox-2" port="Firefox:output_FR"/>
-   <input node="Lethal Company.exe" port="Lethal Company.exe:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="games Audio/Sink sink" port="games Audio/Sink sink:monitor_FR"/>
-   <input node="OBS-3" port="OBS:input_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Firefox" port="Firefox:output_FL"/>
-   <input node="node-7" port=":input_FL"/>
   </item>
  </items>
 </patchbay>
