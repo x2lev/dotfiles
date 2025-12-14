@@ -216,13 +216,13 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/gpu": {
-        "exec": "cat /sys/class/hwmon/hwmon5/device/gpu_busy_percent",
+        "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
         "format": "GPU: {}%",
         "return-type": "",
         "interval": 1
     },
     "custom/gpu-temp": {
-	"exec": "cat /sys/class/hwmon/hwmon5/temp1_input | awk '{printf \"%.1f\", $1/1000}'",
+	"exec": "cat /sys/class/hwmon/hwmon4/temp1_input | awk '{printf \"%.1f\", $1/1000}'",
 	"format": "{}°C",
 	"return-type": "",
 	"interval": 1
