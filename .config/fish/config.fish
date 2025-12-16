@@ -14,4 +14,7 @@ if status is-interactive
     set fish_greeting
 end
 
+set -gx LANG uk_UA.UTF-8
+set -gx LC_ALL uk_UA.UTF-8
+set -gx LC_MESSAGES uk_UA.UTF-8
 source /etc/environment
