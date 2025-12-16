@@ -11,8 +11,8 @@
       "separator": " ",
       "constants": [
         "╭──────────────────────────────────────────────────╮",
-        "╞═════════╤════════════════════════════════════════╡",
-        "╰─────────┴────────────────────────────────────────╯",
+        "╞══════════╤═══════════════════════════════════════╡",
+        "╰──────────┴───────────────────────────────────────╯",
         "│\u001b[50C│\u001b[50D"
       ]
   },
@@ -36,64 +36,74 @@
     },
     {
       "type": "os",
-      "key": "{$4}{#31}ОС      {#keys}│",
-      "format": "{pretty-name} {arch}"
+      "key": "{$4}{#31}ОС       {#keys}│",
+      "format": ""
     },
     {
       "type": "host",
-      "key": "{$4}{#32}ХОСТ    {#keys}│",
+      "key": "{$4}{#32}ХОСТ     {#keys}│",
       "format": "{name}"
     },
     {
       "type": "kernel",
-      "key": "{$4}{#33}ЯДРО    {#keys}│",
-      "format": "{sysname} {release}"
+      "key": "{$4}{#33}ЯДРО     {#keys}│",
+      "format": ""
     },
     {
       "type": "wm",
-      "key": "{$4}{#34}МВ      {#keys}│",
-      "format": "{pretty-name} ({protocol-name})"
+      "key": "{$4}{#34}МВ       {#keys}│",
+      "format": ""
     },
     {
       "type": "terminal",
-      "key": "{$4}{#35}ТЕРМІНАЛ{#keys}│",
+      "key": "{$4}{#35}ТЕРМІНАЛ {#keys}│",
+      "format": ""
+    },
+    {
+      "type": "shell",
+      "key": "{$4}{#36}ОБОЛОНКА {#keys}│",
+      "format": ""
+    },
+    {
+      "type": "editor",
+      "key": "{$4}{#37}РЕДАКТОР {#keys}│",
       "format": ""
     },
     {
       "type": "cpu",
-      "key": "{$4}{#36}ПРОЦЕСОР{#keys}│",
+      "key": "{$4}{#31}ПРОЦЕСОР {#keys}│",
       "format": "{name}"
       //"format": "{name}\u001b[8D\u001b[KGFX   {#keys}│"
     },
     {
       "type": "gpu",
       "hideType": "integrated",
-      "key": "{$4}{#31}ГРАФІКА {#keys}│",
+      "key": "{$4}{#32}ГРАФІКА  {#keys}│",
       "format": "{name}"
     },
     {
       "type": "memory",
-      "key": "{$4}{#32}ПАМ'ЯТЬ {#keys}│",
+      "key": "{$4}{#33}ПАМ'ЯТЬ  {#keys}│",
       "format": ""
     },
     {
-      "type": "shell",
-      "key": "{$4}{#33}ОБОЛОНКА{#keys}│",
-      "format": ""
+      "type": "disk",
+      "key": "{$4}{#36}DISK     {#keys}│",
+      "format": "{name} - {size-used} / {size-total} ({size-percentage})"
     },
     {
       "type": "packages",
-      "key": "{$4}{#34}ПАКЕТИ  {#keys}│",
+      "key": "{$4}{#34}ПАКЕТИ   {#keys}│",
       "format": ""
     },
     {
       "type": "uptime",
-      "key": "{$4}{#35}АПТАЙМ  {#keys}│",
+      "key": "{$4}{#35}ЧАС РОБ. {#keys}│",
       "format": ""
     },
     {
       "type": "colors",
-      "key": "{$4}{#36}КОЛЬОРИ {#keys}│",
+      "key": "{$4}{#37}КОЛЬОРИ  {#keys}│",
       "symbol": "block",
       "block": {
         "range": [8, 15]
