@@ -43,7 +43,7 @@
     {
       "type": "host",
       "key": "{$4}{#32}ХОСТ     {#keys}│",
-      "format": "{name}"
+      "format": ""
     },
     {
       "type": "kernel",
@@ -53,7 +53,7 @@
     {
       "type": "wm",
       "key": "{$4}{#34}МВ       {#keys}│",
-      "format": ""
+      "format": "{pretty-name} {version}"
     },
     {
       "type": "terminal",
