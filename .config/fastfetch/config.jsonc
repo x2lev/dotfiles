@@ -89,17 +89,17 @@
     },
     {
       "type": "disk",
-      "key": "{$4}{#36}ДИСК     {#keys}│",
+      "key": "{$4}{#34}ДИСК     {#keys}│",
       "format": "{size-used} / {size-total} ({size-percentage})"
     },
     {
       "type": "packages",
-      "key": "{$4}{#34}ПАКУНКИ  {#keys}│",
+      "key": "{$4}{#35}ПАКУНКИ  {#keys}│",
       "format": ""
     },
     {
       "type": "uptime",
-      "key": "{$4}{#35}ЧАС РОБ. {#keys}│",
+      "key": "{$4}{#36}ЧАС РОБ. {#keys}│",
       "format": ""
     },
     {
