@@ -17,6 +17,10 @@
     //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
     "modules-right": [
         "tray",
+    //    "cpu",
+    //    "temperature",
+    //    "custom/gpu",
+    //    "custom/gpu-temp",
         "backlight",
         "battery",
         "pulseaudio",
@@ -30,7 +34,7 @@
     //    "warp-on-scroll": false,
     //    "format": "{name}: {icon}",
     //    "format-icons": {
-    //        "1": "",
+    //         "1": "",
     //         "2": "",
     //         "3": "",
     //         "4": "",
@@ -211,13 +215,13 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/gpu": {
-        "exec": "cat /sys/class/hwmon/hwmon5/device/gpu_busy_percent",
+        "exec": "cat /sys/class/hwmon/hwmon6/device/gpu_busy_percent",
         "format": "GPU: {}%",
         "return-type": "",
         "interval": 1
     },
     "custom/gpu-temp": {
-	"exec": "cat /sys/class/hwmon/hwmon5/temp1_input | awk '{printf \"%.1f\", $1/1000}'",
+	"exec": "cat /sys/class/hwmon/hwmon6/temp1_input | awk '{printf \"%.1f\", $1/1000}'",
 	"format": "{}°C",
 	"return-type": "",
 	"interval": 1
