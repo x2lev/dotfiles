@@ -4,9 +4,6 @@ if status is-interactive
     if [ $TERM = "xterm-kitty" ]
         fastfetch
     end
-    if uwsm check may-start
-        exec uwsm start hyprland-uwsm.desktop
-    end
     abbr -a naf "nano ~/.config/fish/config.fish"
     abbr -a nah "nano ~/.config/hypr/hyprland.conf"
     abbr -a nac "nano ~/.config/waybar/config.jsonc"
