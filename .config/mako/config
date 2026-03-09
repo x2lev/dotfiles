@@ -1,5 +1,7 @@
+font=Fira Mono, 10
 background-color=#1d2021cc
 text-color=#ebdbb2ff
 border-radius=10
 border-color=#db3c29
 default-timeout=7500
+
