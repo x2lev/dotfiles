@@ -17,6 +17,8 @@
     //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
     "modules-right": [
         "tray",
+        "hyprland/language",
+        "keyboard-state",
         "cpu",
         "temperature",
         "custom/gpu",
@@ -25,6 +27,12 @@
         "clock",
         "custom/power"
     ],
+    "hyprland/language": {
+        "format": "{} ",
+        "format-en": "en",
+        "format-uk": "uk",
+        "format-ru": "ru"
+    },
     // Modules configuration
     "hyprland/workspaces": {
     //    "disable-scroll": true,
@@ -43,9 +51,9 @@
     //    }
     },
     "keyboard-state": {
-        "numlock": true,
+        "numlock": false,
         "capslock": true,
-        "format": "{name} {icon}",
+        "format": "{icon} ",
         "format-icons": {
             "locked": "",
             "unlocked": ""

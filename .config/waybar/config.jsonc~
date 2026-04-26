@@ -17,6 +17,8 @@
     //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
     "modules-right": [
         "tray",
+        "hyprland/language",
+        "keyboard-state",
         "cpu",
         "temperature",
         "custom/gpu",
@@ -25,6 +27,12 @@
         "clock",
         "custom/power"
     ],
+    "hyprland/language": {
+        "format": "{} ",
+        "format-en": "en",
+        "format-uk": "uk",
+        "format-ru": "ru"
+    },
     // Modules configuration
     "hyprland/workspaces": {
     //    "disable-scroll": true,
@@ -43,9 +51,9 @@
     //    }
     },
     "keyboard-state": {
-        "numlock": true,
+        "numlock": false,
         "capslock": true,
-        "format": "{name} {icon}",
+        "format": "{name} {icon} ",
         "format-icons": {
             "locked": "",
             "unlocked": ""
@@ -216,13 +224,13 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/gpu": {
-        "exec": "cat /sys/class/hwmon/hwmon5/device/gpu_busy_percent",
+        "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
         "format": "GPU: {}%",
         "return-type": "",
         "interval": 1
     },
     "custom/gpu-temp": {
-	"exec": "cat /sys/class/hwmon/hwmon5/temp1_input | awk '{printf \"%.1f\", $1/1000}'",
+	"exec": "cat /sys/class/hwmon/hwmon4/temp1_input | awk '{printf \"%.1f\", $1/1000}'",
 	"format": "{}°C",
 	"return-type": "",
 	"interval": 1
