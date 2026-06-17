@@ -18,7 +18,6 @@
     "modules-right": [
         "tray",
         "hyprland/language",
-        "keyboard-state",
         "cpu",
         "temperature",
         "custom/gpu",

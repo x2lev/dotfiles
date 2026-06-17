@@ -53,7 +53,7 @@
     "keyboard-state": {
         "numlock": false,
         "capslock": true,
-        "format": "{name} {icon} ",
+        "format": "{icon} ",
         "format-icons": {
             "locked": "",
             "unlocked": ""
