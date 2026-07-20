@@ -29,9 +29,8 @@ hl.workspace_rule({
 ---------------
 ---- INPUT ----
 ---------------
-hl.input({
-    kb_options = {
-        grp = "win_space_toggle",
-        lv3 = "ralt_switch",
-    }
+hl.config({
+    input = {
+        kb_options = "grp:win_space_toggle,lv3:ralt_switch",
+    },
 })

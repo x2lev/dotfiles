@@ -64,7 +64,7 @@ hl.env("EDITOR", "nano")
 hl.env("VISUAL", "nano")
 hl.env("QT_QPA_PLATFORM", "xcb")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
-hl.env("XCURSOR_SIZE"", " "24")
+hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
 hl.env("AUR_USERNAME", "x2lev")
@@ -116,10 +116,10 @@ hl.config({
         layout = "dwindle",
 
         locale = "uk_UA",
-    },
 
-    snap = {
-        enabled = true,
+        snap = {
+            enabled = true,
+        },
     },
 
     decoration = {
@@ -131,7 +131,7 @@ hl.config({
         inactive_opacity = 1.0,
 
         shadow = {
-            enabled      = true,
+            enabled      = false,
             range        = 4,
             render_power = 3,
             color        = 0x1a1a1aee,
@@ -139,6 +139,7 @@ hl.config({
 
         blur = {
             enabled   = true,
+            xray      = false,
             size      = 3,
             passes    = 1,
             vibrancy  = 0.1696,
@@ -162,8 +163,8 @@ hl.curve("easy",           { type = "spring", mass = 1, stiffness = 71.2633, dam
 
 hl.animation({ leaf = "global",        enabled = true,  speed = 10,   bezier = "default" })
 hl.animation({ leaf = "border",        enabled = true,  speed = 5.39, bezier = "easeOutQuint" })
-hl.animation({ leaf = "windows",       enabled = true,  speed = 4.79, spring = "easy" })
-hl.animation({ leaf = "windowsIn",     enabled = true,  speed = 4.1,  spring = "easy",         style = "popin 87%" })
+hl.animation({ leaf = "windows",       enabled = true,  speed = 4.79, bezier = "easeOutQuint" })
+hl.animation({ leaf = "windowsIn",     enabled = true,  speed = 4.1,  bezier = "easeOutQuint",         style = "popin 87%" })
 hl.animation({ leaf = "windowsOut",    enabled = true,  speed = 1.49, bezier = "linear",       style = "popin 87%" })
 hl.animation({ leaf = "fadeIn",        enabled = true,  speed = 1.73, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeOut",       enabled = true,  speed = 1.46, bezier = "almostLinear" })
@@ -223,7 +224,7 @@ hl.config({
 
 hl.config({
     misc = {
-        font_family = "Fira"
+        font_family = "Fira",
         force_default_wallpaper = 1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
     },
@@ -258,7 +259,7 @@ hl.config({
 })
 
 hl.gesture({
-    workspace_swipe_distance = 700
+    workspace_swipe_distance = 700,
     fingers = 4,
     direction = "horizontal",
     action = "workspace"
@@ -316,14 +317,14 @@ for i = 1, 10 do
     hl.bind(main_mod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
-hl.bind(main_mod .. " + CTRL  + left",  hl.dsp.focus({ workspace = "r-1" }))
-hl.bind(main_mod .. " + CTRL  + right", hl.dsp.focus({ workspace = "r+1" }))
+hl.bind(main_mod .. " + CTRL  + left",  hl.dsp.focus({ workspace = "-1" }))
+hl.bind(main_mod .. " + CTRL  + right", hl.dsp.focus({ workspace = "+1" }))
 hl.bind(main_mod .. " + CTRL  + up",    hl.dsp.workspace.toggle_special("magic"))
 hl.bind(main_mod .. " + CTRL  + down",  hl.dsp.workspace.toggle_special("magic"))
-hl.bind(main_mod .. " + SHIFT + left",  hl.dsp.window.move({ workspace = "r-1" }))
-hl.bind(main_mod .. " + SHIFT + right", hl.dsp.window.move({ workspace = "r+1" }))
+hl.bind(main_mod .. " + SHIFT + left",  hl.dsp.window.move({ workspace = "-1" }))
+hl.bind(main_mod .. " + SHIFT + right", hl.dsp.window.move({ workspace = "+1" }))
 hl.bind(main_mod .. " + SHIFT + up",    hl.dsp.window.move({ workspace = "special:magic" }))
-hl.bind(main_mod .. " + SHIFT + down",  hl.dsp.window.move({ workspace = "r+0" }))
+hl.bind(main_mod .. " + SHIFT + down",  hl.dsp.window.move({ workspace = "+0" }))
 
 -- Example special workspace (scratchpad)
 hl.bind(main_mod .. " + A",         hl.dsp.workspace.toggle_special("magic"))
@@ -444,17 +445,17 @@ hl.window_rule({
 -- overlayLayerRule:set_enabled(false)
 
 -- Hyprland-run windowrule
--- hl.window_rule({
---     name  = "move-hyprland-run",
---     match = { class = "hyprland-run" },
+hl.window_rule({
+    name  = "move-hyprland-run",
+    match = { class = "hyprland-run" },
 
---     move  = "20 monitor_h-120",
---     float = true,
--- })
+    move  = "20 monitor_h-120",
+    float = true,
+})
 
-local hyprhost = "hypr" .. utils.hostname()
-local f = io.open(hyprhost .. ".lua", "r")
-if f then
+local hostname = utils.hostname()
+local f = io.open("/home/lev/.config/hypr/" .. hostname .. ".lua", "r")
+if f~=nil then
     f:close()
-    require(hyprhost)
+    require(hostname)
 end
