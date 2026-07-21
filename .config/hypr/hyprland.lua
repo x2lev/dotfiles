@@ -48,7 +48,7 @@ local alt_music    = "youtube-music" -- firefox --new-window music.youtube.com
 
 hl.on("hyprland.start", function () 
   hl.exec_cmd("~/.cache/wal/templates/colors.fish")
-  hl.exec_cmd("nm-applet & blueman-applet & mako & udiskie & hyprpaper")
+  hl.exec_cmd("nm-applet & blueman-applet & mako & udiskie")
   hl.exec_cmd("wl-paste --type text --watch cliphist store")
   hl.exec_cmd("wl-paste --type image --watch cliphist store")
 end)
