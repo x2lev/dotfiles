@@ -29,8 +29,7 @@
     "hyprland/language": {
         "format": "{} ",
         "format-en": "en",
-        "format-uk": "uk",
-        "format-ru": "ru"
+        "format-uk": "uk"
     },
     // Modules configuration
     "hyprland/workspaces": {
