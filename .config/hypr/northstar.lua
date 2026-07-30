@@ -4,7 +4,7 @@
 
 hl.monitor({
     output   = "eDP-2",
-    mode     = "2560x1440@165",
+    mode     = "2560x1600@165",
     position = "0x0",
     scale    = "1.6",
 })
@@ -15,6 +15,21 @@ hl.monitor({
     scale    = "1",
     -- mirror = "eDP-2",
 })
+
+--------------------
+---- AUTOSTART -----
+--------------------
+
+hl.on("hyprland.start", function ()
+  hl.exec_cmd("rog-control-center")
+end)
+
+
+---------------------
+---- KEYBINDINGS ----
+---------------------
+
+hl.bind("XF86Launch1", hl.dsp.exec_cmd("rog-control-center"))
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
