@@ -30,7 +30,7 @@ hl.monitor({
 
 -- Set programs that you use
 local terminal     = "kitty"
-local file_manager = "dolphin"
+local file_manager = "nautilus -w"
 local menu         = "fuzzel"
 local browser      = "firefox"
 local music        = "tidal-hifi"
@@ -433,7 +433,7 @@ hl.window_rule({
     name  = "auto-float",
     match = {
         title = "Pick Files|File Upload",
-        class = "xdg-desktop-portal-gtk|Matplotlib|mpv|feh",
+        class = "xdg-desktop-portal-gtk|Matplotlib|mpv|feh|steam",
     },
     float = true,
 })
