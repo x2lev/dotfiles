@@ -19,13 +19,13 @@ hl.monitor({
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
 hl.workspace_rule({
-    workspace  = 1,
+    workspace  = 0,
     monitor    = "HDMI-A-1",
     default    = true,
     persistent = true,
 })
 hl.workspace_rule({
-    workspace  = 2,
+    workspace  = 1,
     monitor    = "DP-1",
     default    = true,
 })

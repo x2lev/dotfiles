@@ -46,7 +46,7 @@ local alt_music    = "youtube-music" -- firefox --new-window music.youtube.com
 -- Autostart necessary processes (like notifications daemons, status bars, etc.)
 -- Or execute your favorite apps at launch like this:
 
-hl.on("hyprland.start", function () 
+hl.on("hyprland.start", function ()
   hl.exec_cmd("~/.cache/wal/templates/colors.fish")
   hl.exec_cmd("nm-applet & blueman-applet & mako & udiskie")
   hl.exec_cmd("wl-paste --type text --watch cliphist store")
@@ -432,8 +432,16 @@ hl.window_rule({
     -- Auto-float some windows that benefit from it
     name  = "auto-float",
     match = {
-        title = "Pick Files|File Upload",
         class = "xdg-desktop-portal-gtk|Matplotlib|mpv|feh|steam",
+    },
+    float = true,
+})
+
+hl.window_rule({
+    -- Auto-float some windows that benefit from it (relies on titles)
+    name  = "auto-float-named",
+    match = {
+        title = "Pick Files|File Upload",
     },
     float = true,
 })
