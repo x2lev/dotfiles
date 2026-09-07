@@ -4,10 +4,8 @@ if status is-interactive
     if [ $TERM = "xterm-kitty" ]
         fastfetch
     end
-    abbr -a naf "nano ~/.config/fish/config.fish"
-    abbr -a nah "nano ~/.config/hypr/hyprland.conf"
-    abbr -a nac "nano ~/.config/waybar/config.jsonc"
-    abbr -a nas "nano ~/.config/waybar/style.css"
+    abbr -a naco --set-cursor "nano ~/.config/%"
+    abbr -a rebuild-hyprland "yay -S --rebuild (yay -Qq | grep hypr | grep git | grep -v debug)"
     set fish_greeting
 end
 
