@@ -33,6 +33,7 @@ local terminal     = "kitty"
 local file_manager = "nautilus -w"
 local menu         = "fuzzel"
 local browser      = "firefox"
+local chrome       = "chromium"
 local music        = "tidal-hifi"
 local alt_music    = "youtube-music" -- firefox --new-window music.youtube.com
 
@@ -283,6 +284,7 @@ local main_mod = "SUPER" -- Sets "Windows" key as main modifier
 hl.bind(main_mod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(main_mod .. " + Q", hl.dsp.window.close())
 hl.bind(main_mod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(main_mod .. " + SHIFT + B", hl.dsp.exec_cmd(chrome))
 hl.bind(main_mod .. " + M", hl.dsp.exec_cmd(music))
 hl.bind(main_mod .. " + SHIFT + M", hl.dsp.exec_cmd(alt_music))
 hl.bind(main_mod .. " + E", hl.dsp.exec_cmd(file_manager))
