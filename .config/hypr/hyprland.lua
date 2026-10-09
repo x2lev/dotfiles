@@ -33,9 +33,10 @@ local terminal     = "kitty"
 local file_manager = "nautilus -w"
 local menu         = "fuzzel"
 local browser      = "firefox"
-local chrome       = "chromium"
+local alt_browser  = "chromium"
 local music        = "tidal-hifi"
 local alt_music    = "youtube-music" -- firefox --new-window music.youtube.com
+local ide          = "code-oss"
 
 
 -------------------
@@ -284,13 +285,14 @@ local main_mod = "SUPER" -- Sets "Windows" key as main modifier
 hl.bind(main_mod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(main_mod .. " + Q", hl.dsp.window.close())
 hl.bind(main_mod .. " + B", hl.dsp.exec_cmd(browser))
-hl.bind(main_mod .. " + SHIFT + B", hl.dsp.exec_cmd(chrome))
+hl.bind(main_mod .. " + SHIFT + B", hl.dsp.exec_cmd(alt_browser))
 hl.bind(main_mod .. " + M", hl.dsp.exec_cmd(music))
 hl.bind(main_mod .. " + SHIFT + M", hl.dsp.exec_cmd(alt_music))
 hl.bind(main_mod .. " + E", hl.dsp.exec_cmd(file_manager))
 hl.bind(main_mod .. " + D", hl.dsp.exec_cmd("discord"))
 hl.bind(main_mod .. " + G", hl.dsp.exec_cmd("steam"))
 hl.bind(main_mod .. " + SHIFT + G", hl.dsp.exec_cmd('notify-send -t 10000 -i steam "Launching Steam..." "Just give it second..." && steam'))
+hl.bind(main_mod .. " + C", hl.dsp.exec_cmd(ide))
 -- hl.bind(main_mod .. " + _", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(main_mod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(main_mod .. " + SHIFT + F", hl.dsp.window.fullscreen({ action = "toggle" }))
@@ -301,7 +303,7 @@ hl.bind(main_mod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(main_mod .. " + K", hl.dsp.layout("swapsplit"))    -- dwindle only
 hl.bind(main_mod .. " + V", hl.dsp.exec_cmd('cliphist list | fuzzel --dmenu | cliphist decode | wl-copy'))
 hl.bind(main_mod .. " + SHIFT + V", hl.dsp.exec_cmd('cliphist list | fuzzel --dmenu | cliphist delete'))
-hl.bind(main_mod .. " + C", hl.dsp.exec_cmd('hyprpicker -a && notify-send "Color Copied" "$(wl-paste)" -t 3000'))
+hl.bind(main_mod .. " + SHIFT + C", hl.dsp.exec_cmd('hyprpicker -a && notify-send "Color Copied" "$(wl-paste)" -t 3000'))
 hl.bind(main_mod .. " + W", hl.dsp.exec_cmd('systemctl --user restart waybar'))
 hl.bind(main_mod .. " + H", hl.dsp.exec_cmd('hyprctl reload && notify-send -t 1000 -i ~/Downloads/favicon.png "Hyprland Reloaded!" "You\'re good to go!"'))
 
