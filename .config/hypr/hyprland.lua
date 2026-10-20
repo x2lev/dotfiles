@@ -354,9 +354,11 @@ hl.bind(main_mod .. " + mouse:273",        hl.dsp.window.resize(), { mouse = tru
 hl.bind(main_mod .. " + CTRL + mouse:272", hl.dsp.window.resize(), { mouse = true })
 
 -- Screenshotting
-hl.bind(main_mod .. " + S",         hl.dsp.exec_cmd('hyprshot -m region -o ~/Pictures/Screenshots'))
-hl.bind(main_mod .. " + SHIFT + S", hl.dsp.exec_cmd('hyprshot -m window -o ~/Pictures/Screenshots'))
-hl.bind(main_mod .. " + CTRL + S",  hl.dsp.exec_cmd('hyprshot -m output -o ~/Pictures/Screenshots'))
+hl.bind(main_mod .. " + S",               hl.dsp.exec_cmd('hyprshot -m region -o ~/Pictures/Screenshots'))
+hl.bind(main_mod .. " + SHIFT + S",       hl.dsp.exec_cmd('hyprshot -m window -o ~/Pictures/Screenshots'))
+hl.bind(main_mod .. " + CTRL + S",        hl.dsp.exec_cmd('hyprshot -m output -o ~/Pictures/Screenshots'))
+hl.bind(main_mod .. " + SHIFT + ALT + S", hl.dsp.exec_cmd('hyprshot -m window -m active -o ~/Pictures/Screenshots'))
+hl.bind(main_mod .. " + CTRL + ALT + S",  hl.dsp.exec_cmd('hyprshot -m output -m active -o ~/Pictures/Screenshots'))
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%+"), { locked = true, repeating = true })
