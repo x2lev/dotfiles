@@ -6,6 +6,7 @@ if status is-interactive
     end
     abbr -a naco --set-cursor "nano ~/.config/%"
     abbr -a rebuild-hyprland "yay -S --rebuild (yay -Qq | grep hypr | grep git | grep -v debug)"
+    abbr -a hw-dir "cd (zenity --file-selection --directory) && cp ../../../templates/template.txt solutions.tex && cp (zenity --file-selection) problems.pdf"
     set fish_greeting
 end
 

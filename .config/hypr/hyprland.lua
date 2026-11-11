@@ -68,6 +68,8 @@ hl.env("QT_QPA_PLATFORM", "xcb")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("QT_SCALE_FACTOR", "2")
+hl.env("GDK_SCALE", "2")
 
 hl.env("AUR_USERNAME", "x2lev")
 hl.env("AUR_PASSWORD", "Aurora80247")

@@ -1,13 +1,13 @@
-// This configuration file allows you to pass permanent command line arguments to VSCodium.
+// This configuration file allows you to pass permanent command line arguments to VS Code.
 // Only a subset of arguments is currently supported to reduce the likelihood of breaking
 // the installation.
 //
 // PLEASE DO NOT CHANGE WITHOUT UNDERSTANDING THE IMPACT
 //
-// NOTE: Changing this file requires a restart of VSCodium.
+// NOTE: Changing this file requires a restart of VS Code.
 {
 	// Use software rendering instead of hardware accelerated rendering.
-	// This can help in cases where you see rendering issues in VSCodium.
+	// This can help in cases where you see rendering issues in VS Code.
 	// "disable-hardware-acceleration": true,
 
 	// Allows to disable crash reporting.
@@ -16,7 +16,6 @@
 
 	// Unique id used for correlating crash reports sent from this instance.
 	// Do not edit this value.
-	"crash-reporter-id": "9f90b448-1e25-4863-8b9a-84e48d0adb8d",
-	"password-store": "basic",
+	"crash-reporter-id": "e6b31ff5-8972-44f8-b3ea-b81e27da57cf",
 	"locale": "uk"
 }
